@@ -1,0 +1,36 @@
+#Using preset of "mtcars" dataset from RStudio
+
+#Generic Function can be assigned
+>list(mtcars)
+[[1]]                     mpg   cyl  disp
+Mazda RX4                21.0   6    160.0
+Mazda RX4 Wag            21.0   6    160.0
+Datsun 710               22.8   4    108.0
+Hornet 4 Drive           21.4   6    258.0
+Hornet Sportabout        18.7   8    360.0
+Valiant                  18.1   6    225.0
+Duster 360               14.3   8    360.0
+Merc 240D                24.4   4    146.7
+Merc 230                 22.8   4    140.8
+Merc 280                 19.2   6    167.6
+Merc 280C                17.8   6    167.6
+Merc 450SE               16.4   8    275.8
+Merc 450SL               17.3   8    275.8
+Merc 450SLC              15.2   8    275.8
+Cadillac Fleetwood       10.4   8    472.0
+Lincoln Continental      10.4   8    460.0
+Chrysler Imperial        14.7   8    440.0
+
+...
+
+#showcases list of cars, mpg, amount of cylanders, displacement, HP, etc.
+
+#finding OO system
+> !isS4(mtcars)
+[1] TRUE
+
+#finding base class
+> typeof(mtcars)
+[1] "list"
+
+#S4 can be assigned to dataset
