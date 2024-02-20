@@ -26,8 +26,9 @@ Chrysler Imperial        14.7   8    440.0
 #showcases list of cars, mpg, amount of cylanders, displacement, HP, etc.
 
 #finding OO system
-> !isS4(mtcars)
+> !is(mtcars, "6")
 [1] TRUE
+  #This means this is an S4
 
 #finding base class
 > typeof(mtcars)
