@@ -33,4 +33,36 @@ Chrysler Imperial        14.7   8    440.0
 > typeof(mtcars)
 [1] "list"
 
-#S4 can be assigned to dataset
+#S4 can be assigned to the "mtcars" dataset.
+
+#EXAMPLES
+
+  #S3
+> student1 <- list(name = "Trevor", age = 25, role = "Master's Student")
+> class(student1) <- "Employee_Info"
+> student1
+$name
+[1] "Trevor"
+$age
+[1] 25
+$role
+[1] "Master's Student"
+attr(,"class")
+[1] "Employee_Info"
+
+  #S4
+> setClass("Person",
++ slots = list(name = "character",
++ age = "numeric",
++ gender = "character"))
+> person1 <- new("Person", name = "John Doe", age = 45, gender = "Male")
+> person1
+An object of class "Person"
+Slot "name":
+[1] "John Doe"
+
+Slot "age":
+[1] 45
+
+Slot "gender":
+[1] "Male"
